@@ -1,9 +1,26 @@
 03-01: Sorting
 *Please answer every theoretical question regarding this task here*
 
+1. In selection sort algorithm the smallest element is identified by comparing its value with all the other elements in
+   the array and is then placed in its desired correct position.Thus by repeating the same technique all the elements
+   are compared to all the other elements every time and are placed in their desired correct positions.
 
+   In insertion sort a selected element is compared to its previous element and is inserted in its correct position. In
+   each iteration it removes one element at a time thus by inserting the selected element in desired correct position.
 
+   The difference between these two sorts is in their inner loops.In selection sort inner loop iterates over unsorted
+   elements and in each pass one selected element is moved to its final position, while in insertion sort the inner loop
+   iterates over the sorted elements and inserts the selected element in its correct position.
+   Selection sort is unstable while insertion sort is stable.
 
+2. Insertion sort is stable.Let us consider an example of an array with 3 elements.Let the elements be represented as
+   (4,a) (4,b) and (3,a). If we use selection sort, the elements will be arranged as (3,a) (4,b) and (4,a), since the
+   position of the elements is not in order, it is unstable.But if we use insertion sort the elements are arranged as
+   (3,a) (4,a) and (4,b) where the order of the elements is maintained even after sorting. Hence insertion sort is stable.
+
+3. The computational complexity of linear search is O(n) and that of binary search is O(log n).
+   The computational complexity of insertion sort with linear search is O(n^2) so if we insert using binary search then
+   the complexity changes to O(nlogn).
 
 03-02: Quicksort for Comparable-Objects
 *Please answer every theoretical question regarding this task here*
@@ -15,6 +32,10 @@
 03-03: MergeSort Using Comparator
 *Please answer every theoretical question regarding this task here*
 
-
+3. Merge sort is a stable algorithm because it maintains the while mering the split arrays it ensures that the elements
+   maintain their original positions with respect to each other.For example if the left array and right array have the
+   elements of same value then the element in the left array is placed first and then comes the element in the right
+   array thus arranging by the order of their indices, as the left array is the first part of the main array and the
+   right array is the last part of the main array.
 
 
